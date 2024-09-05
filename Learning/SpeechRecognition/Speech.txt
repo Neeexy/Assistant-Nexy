@@ -1,0 +1,3 @@
+Por óbvio, esse é o diretório dos meus estudos sobre o reconhecimento de voz. Minha ideia é fazer com que o Nexy fique sempre atento a minha voz  e reconheça minhas palavras em português ou inglês (se possível)
+
+Obviously, this is the directory for my studies on voice recognition. My idea is to have Nexy always attentive to my voice and able to recognize my words in Portuguese or English (if possible).
