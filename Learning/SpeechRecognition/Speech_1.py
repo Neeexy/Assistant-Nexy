@@ -8,10 +8,12 @@ from time import sleep
 
 recognizer = sr.Recognizer() 
 
-print(sr.Microphone.list_microphone_names())
-'''with sr.Microphone(3) as microphone: # Usando o caixa como microfone kkkkk
+# print(sr.Microphone.list_microphone_names())
+with sr.Microphone(1) as microphone: # Usando o caixa como microfone kkkkk
     recognizer.adjust_for_ambient_noise(microphone)
     print('Pode falar')
     audio = recognizer.listen(microphone)
     text = recognizer.recognize_google(audio, language="pt-BR")
-    print(text)'''
+    print(text)
+
+'''Meu objetivo de fazer o programa me entender foi realizado. Fim'''
