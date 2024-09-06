@@ -10,15 +10,20 @@ recoginizer = sr.Recognizer()
 # Paths 
 
 chrome_path = r'"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"'
+whatsapp_path = r'"C:\\Program Files\WindowsApps\\5319275A.WhatsAppDesktop_2.2435.4.0_x64__cv1g1gvanyjgm\\WhatsApp.exe"'
+github_desktop_path = r'"C:\\Users\\Gabriel\AppData\\Local\\GitHubDesktop\\app-3.4.3\\GitHubDesktop.exe"'
+
+# URL's
+
 url = "https://www.youtube.com/"
 url_channel = "https://www.youtube.com/@Neeexy"
 url_spotify = "https://open.spotify.com/intl-pt"
-whatsapp_path = r'"C:\\Program Files\WindowsApps\\5319275A.WhatsAppDesktop_2.2435.4.0_x64__cv1g1gvanyjgm\\WhatsApp.exe"'
+
 
 with sr.Microphone(1) as microphone:
     recoginizer.adjust_for_ambient_noise(microphone)
     os.system('cls')
-    print('✅✅ Nexy pronto para ouvir! ✅✅')
+    print('✅✅ Nexy pronto para ouvir! ✅✅\n')
     audio = recoginizer.listen(microphone)
     message = recoginizer.recognize_google(audio, language="pt-BR")
     message = message.replace('nexi','Nexy').replace('next','Nexy')
@@ -60,3 +65,7 @@ with sr.Microphone(1) as microphone:
     if 'whatsapp' in message:
         print('Abrindo Whatsapp')
         os.system(f'{whatsapp_path}')
+
+    if 'github' in message:
+        print('Abrindo o GitHub Desktop')
+        os.system(f'{github_desktop_path}')
