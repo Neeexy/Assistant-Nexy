@@ -1,0 +1,1 @@
+Nesse momento 05/09/2024 eu já aprendi como funciona e a utilizar a biblioteca de reconhecimento de voz, o proximo passo é dar voz ao Nexy.

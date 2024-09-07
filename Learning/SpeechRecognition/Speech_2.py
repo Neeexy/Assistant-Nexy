@@ -69,3 +69,5 @@ with sr.Microphone(1) as microphone:
     if 'github' in message:
         print('Abrindo o GitHub Desktop')
         os.system(f'{github_desktop_path}')
+
+#  Objetivo atingido
