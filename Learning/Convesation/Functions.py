@@ -20,7 +20,7 @@ def getCommand(): # Receber comando por voz
         # os.system('cls')
         # speak('Nexy Ouvindo, como posso lhe ajudar?')
         print('✅✅ Nexy pronto para ouvir! ✅✅\n')
-        recoginizer.pause_threshold = 0.5
+        recoginizer.pause_threshold = 1
         audio = recoginizer.listen(microphone) #Ativa o listening do microfone
 
     try: # Caso tudo esteja funcionando corretamente, continua
