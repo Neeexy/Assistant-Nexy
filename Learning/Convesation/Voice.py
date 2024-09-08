@@ -24,7 +24,7 @@ close = ['fechar','fecha','feche','encerre','encerrar'] # Palavras chave para fe
 recoginizer = sr.Recognizer() # Reconhecedor de voz
 
 
-Nexy = ts.init("sapi5") 
+Nexy = ts.init("espeak") 
 
 voices = Nexy.getProperty('voices')
 
