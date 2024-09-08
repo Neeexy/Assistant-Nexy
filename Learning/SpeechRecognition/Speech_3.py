@@ -131,6 +131,10 @@ with sr.Microphone(1) as microphone:
     if  'youtube' in message:
         print('Abrindo seu canal!')
         open_url("https://www.youtube.com/")
+    
+    if 'desligar a máquina' in message:
+        os.system("shutdown /s /f /t 0")
+
 
 
 #  Objetivo atingido
